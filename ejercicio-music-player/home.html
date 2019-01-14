@@ -13,36 +13,36 @@
 <body>
     <header>
 
-        <nav>
-            <div class="app-logo">
+        <nav class="navbar">
+            <div class="navbar__logo">
                 <img src="./images/p-logo.jpg" width="25" height="30" alt="web-logo">
                 <button class="shape">=</button>
             </div>
-            <form action="#" method="post">
+            <form class="navbar__search" action="#" method="post">
                 <input type="search" id="search" name="buscar">
                 <input type="submit" name="buscar" value="Buscar">
                 <div class="user">
-                    <span>Andrew Z<input type="image" src="./images/user.jpg"></span>
+                    <span>Andrew Z<img src="./images/user.jpg" alt=""></span>
 
                 </div>
             </form>
-            <div class="tags">
+            <div class="navbar__tags">
                 <p role="heading">Music</p>
-                <ul type="none" class="user-tags">
+                <ul class="navbar__userTags">
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Rising</a></li>
                     <li><a href="#">Inspiration</a></li>
                     <li><a href="#">My stars</a></li>
 
                 </ul>
-                <ul type="none" class="user-tags">
+                <ul class="navbar__userTags">
                     <li><a href="#">Songs</a></li>
                     <li><a href="#">Artist</a></li>
                     <li><a href="#">Albums</a></li>
                     <li><a href="#">Radio</a></li>
                 </ul>
             </div>
-            <div class="playlist">
+            <div class="navbar__playlist">
                 <p role="heading">Playlist
                     <button>+</button>
                 </p>
@@ -59,44 +59,45 @@
 
     </header>
     <main>
-        <article>
-            <div class="button-save"><button>Save to My stars</button></div>
+        <article class="container">
+            <div class="container__button-save"><button>Save to My stars</button></div>
             <div class="artist">
-                <h1>Katy Perry</h1>
-                <ul>
+                <h1 class="container__heading">Katy Perry</h1>
+                <ul class="container__select">
                     <li><a href="#">Albums</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Related artist</a></li>
                 </ul>
-                <div class="col">
-                   <a href="#"><img src="./images/taxi.jpg" alt=""></a>
+                <div class="container__col">
+                    <a href="#"><img src="./images/taxi.jpg" alt=""></a>
                     <p>Witness <br>2017</p>
                 </div>
-                <div class="col">
+                <div class="container__col">
                     <a href="#"><img src="./images/gg.jpg" alt=""></a>
                     <p>PRISM <br>2013</p>
                 </div>
-                <div class="col">
+                <div class="container__col">
                     <a href="#"><img src="./images/mar.jpg" alt=""></a>
                     <p>Teenage Dream <br>2012</p>
                 </div>
-                <div class="col">
+                <div class="container__col">
                     <a href="#"><img src="./images/road.jpg" alt=""></a>
                     <p>Witness <br>2017</p>
                 </div>
-                <div class="col">
+                <div class="container__col">
                     <a href="#"><img src="./images/people1.jpg" alt=""></a>
                     <p>Witness <br>2017</p>
                 </div>
-                <div class="col">
+                <div class="container__col">
                     <a href="#"><img src="./images/mar.jpg" alt=""></a>
                     <p>Witness <br>2017</p>
                 </div>
 
             </div>
-            <aside>
-                <ul type="none" class="random">
-                    <p role="random-selection">Random selection</p>
+            <aside class="playlist">
+                <span>Random selection</span>
+                <ul class="playlist__random">
+
                     <li><button>Awake 3:43 <br>Awake</button></li>
                     <li><button>A Walk 3:17 <br>Dive</button></li>
                     <li><button>Melanine 5:40 <br>Dive</button></li>
@@ -111,25 +112,25 @@
             </aside>
         </article>
 
-        <article><!--div o section, pero NO un article-->
-            <div class="player-bar">
-            </div>
-        <!--no es un formulario, se usan div-->    <form action="#" action="post">
-               <!--cambiar por div todos--> <input type="image" src="./images/play1.jpg" alt=""><span>Ringstone Eyes Gorillaz</span>
-                <input type="submit" name="aleatory" id="aleatory" value="🔀">
-                <input type="submit" name="prev" id="prev" value="⏪">
-                <input type="submit" name="play-pause" id="play-pause" value="⏯️">
-                <input type="submit" name="next" id="next" value="⏩">
-                <input type="submit" name="repeat" id="repeat" value="🔁">
-                <span>🔊<progress value="25" max="50"></progress></span>
-                <span>2:54<progress value="70" max="100"></progress>4:03</span>
-                <input type="submit" name="conect" id="conect" value="📶">
-                <input type="submit" name="playlist-buttom" id="playlist-buttom" value="playlist">
+        <div class="toolbar">
+
+            <div class="toolbar__player">
+
+                <div> <img src="./images/play1.jpg" alt=""> <span>Ringstone Eyes
+                        Gorillaz</span></div>
+                <div class="toolbar_button"><button type="button">🔀</button></div>
+                <div class="toolbar__button"><button type="button">⏪</button></div>
+                <div class="toolbar__button"><button type="button">⏯️</button></div>
+                <div class="toolbar__button"><button type="button">⏩</button></div>
+                <div class="toolbar__button"><button type="button">🔁</button></div>
+                <div class="toolbar__soundProg">🔊<progress value="25" max="50"></progress></div>
+                <div class="toolbar__playProg">2:54<progress value="70" max="100"></progress>4:03</div>
+                <div class="toolbar__button"><button type="button">📶</button></div>
+                <div class="toolbar__button"><button type="button">=</button></div>
 
 
-            <!--no es un formulario, se usan div--></form>
             </div>
-        </article>
+        </div>
     </main>
 
 
