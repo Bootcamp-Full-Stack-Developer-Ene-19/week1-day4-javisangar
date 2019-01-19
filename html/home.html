@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar">
+      <ul class="list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+
+        <li>
+          <div class="dropdown">
+            <a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+              Formación
+            </a>
+            <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+              <a href="#">Angular 7 + Animations- 18 Ene 2019</a>
+              <a href="#">Angular 7 Avanzado- Proximamente</a>
+              <a href="#">Docker + Kubernetes- Proximamente</a>
+              <a href="#">NodeJS- Proximamente</a>
+              <a href="#">CSS + Sass Avanzado- Proximamente</a>
+              <a href="#">VueJS 2- Proximamente</a>
+              <div aria-hidden="true" class="dropdown__menu--divider"></div>
+              <a href="#">Bootcamp</a>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#">Referencia</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+
+
+      <form class="search" action="#">
+        <label for="searchAutocomplete">Buscar en Campus</label>
+
+        <div class="search" id="Sugerencias">
+          <input role="searchbox" id="searchAutocomplete" type="text" class="search__input" aria-haspopup="true"
+            aria-expanded="false">
+          <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
+            <a href="#">Angular 7</a>
+            <a href="#">Angular 7 + Animations</a>
+            <a href="#">Angular 7 Avanzado</a>
+            <div aria-hidden="true" class="dropdown__menu--divider"></div>
+            <a href="#">Otros cursos de formación</a>
+            <a href="#">Bootcamp</a>
+          </div>
+          <button class="search__btn" type="submit">Buscar</button>
+        </div>
+      </form>
+    </nav>
+
+  </header>
+  <main>
+    <section class="intro">
+
+      <div class="container">
+        <h1 class="intro__heading">¡Hola a todos!</h1>
+        <p class="intro__pgh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+          fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit. Adipisci
+          quod,
+          tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a class="intro__btn" href="#">Más información</a>
+      </div>
+    </section>
+    <div class="training">
+      <!---revisar esto-->
+      <article class="sections">
+        <h2 class="training__heading"><a href="#">Angular 7 + Animations</a></h2>
+        <img class="training__image" src="./images/curso.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+          sapiente facere molestiae
+          fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+          reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+        </article>
+      <article class="sections">
+        <h2 class="container__heading"><a href="#">Docker + Kubernetes</a></h2>
+        <img class="container__image" src="./images/curso.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+          sapiente facere molestiae
+          fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+          reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+        </article>
+      <article class="sections">
+        <h2 class="container__heading"><a href="#">NodeJS</a></h2>
+        <img class="container__image" src="./images/curso.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente
+          facere molestiae
+          fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+          reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+        </article>
+    </div>
+
+
+    <article class="spot">
+      <div class="spot__container">
+        <div class="spot__video">
+          <img src="./images/video.png" alt="">
+        </div>
+        <div class="col__spot">
+          <h2 class="spot__heading">Próximas convocatorias</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente
+            facere
+            molestiae.</p>
+          <form class="spot__form" action="">
+            <!--poner clases a este bloque-->
+            <label for="email">Indica tu correo electrónico</label>
+            <input type="email" id="email" placeholder="Introduce un email válido">
+            <button class="spot__btn" type="submit">Me apunto!</button>
+          </form>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="service">
+      <!--ESTE ESTA BIEN, VER-->
+      <h2 class="service__heading">Servicios de apoyo profesional</h2>
+      <p class="service__pgh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente
+        facere molestiae
+        fugiat
+        eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis
+        nemo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse aspernatur, natus quidem
+        voluptas.</p>
+      <a class="service__btn" href="#">Lorem ipsum</a>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot__container">
+      <div class="col">
+        <ul class="site-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Formación</a></li>
+          <li><a href="#">Referencia</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col__foot">
+        <p class="site-foot__text">© Company 2018</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/toggler.js"></script>
+  </footer>
+
+</body>
+
+</html>
